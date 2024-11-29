@@ -1,0 +1,38 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %} 
+<div class="row my-5">
+  <div class="col-12 d-flex justify-content-center align-items-center">
+   <div class="circular-image-container">
+      <img class="circular-image" src="{% static 'images/imani.jpg' %}" alt="Image">
+   </div>
+  </div>
+
+
+  <div class="col-12 text-center mt-3">
+    <h4 class="hello">Hi, my name is</h4>
+    <h1>Imani Ndolo</h1>
+    <h1>I am a Software Developer</h1>
+  </div>
+
+  <div class="col-12 text-center mt-3">
+    <a class="icons" href=""><img src="{% static 'images/linkedin.jpg' %}" alt="linkedin" width="45" height="45">
+    </a>
+
+    <a class="icons" target="_blank" href="https://x.com/ImaniNdolo"><img src="{% static 'images/x.jpeg' %}" alt="x" width="40" height="40">
+    </a>
+
+    <a class="icons" href=""><img src="{% static 'images/facebook.jpg' %}" alt="facebook" width="40" height="40">
+    </a>
+
+    <a class="icons" href=""><img src="{% static 'images/instagram.jpg' %}" alt="instagram" width="40" height="40">
+    </a>
+
+    <a class="icons" target="_blank" href="https://wa.me/message/757XFBSEXX4SA1"><img src="{% static 'images/whatsapp.jpg' %}" alt="whatsapp" width="40" height="40">
+    </a>
+  </div>
+
+</div>
+
+{% endblock content1 %}

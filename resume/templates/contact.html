@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %} 
+
+<div class="row my-2">
+    <div class="col-4 text-center my-5 text-light">
+        <h1 class="mt-5">Stay Connected</h1>
+        <h3 class="mt-5">imanindolo77@gmail.com</h3>
+
+            <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                <a class="icons" href=""><img src="{% static 'images/linkedin.jpg' %}" alt="linkedin" width="45" height="45">
+                </a>
+        
+                <a class="icons" target="_blank" href="https://x.com/ImaniNdolo"><img src="{% static 'images/x.jpeg' %}" alt="x" width="40" height="40">
+                </a>
+        
+                <a class="icons" href=""><img src="{% static 'images/facebook.jpg' %}" alt="facebook" width="40" height="40">
+                </a>
+        
+                <a class="icons" href=""><img src="{% static 'images/instagram.jpg' %}" alt="instagram" width="40" height="40">
+                </a>
+        
+                <a class="icons" target="_blank" href="https://wa.me/message/757XFBSEXX4SA1"><img src="{% static 'images/whatsapp.jpg' %}" alt="whatsapp" width="40" height="40">
+                </a>
+            </div>
+            
+            
+
+    
+    </div>
+
+    <div class="col-5 offset-1 mt-3">
+        <div class="container form-container">
+            <form>
+            <div class="form-group m-3">
+              <label for="exampleInputEmail1">Name:</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Jone Doe">
+            </div>
+            <div class="form-group m-3">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="jonedoe@example.com">
+              </div>
+
+              <div class="form-group m-3">
+                <label for="phone">Phone no.:</label>
+                <input type="tel" class="form-control" id="phone" >
+              </div>
+
+              <div class="form-group m-3"></div>
+                <label for="message">Message:</label>
+                <textarea type="tel" class="form-control" id="message" rows="3" placeholder="Enter your text message here"></textarea>
+              </div>
+            
+            <button type="submit" class="btn btn-primary m-3">Submit</button>
+            </form>
+        </div>
+    </div>        
+</div>
+
+{% endblock content1 %}

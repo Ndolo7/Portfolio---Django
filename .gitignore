@@ -1,0 +1,27 @@
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# SQLite database file
+db.sqlite3
+
+# Environment-specific files
+*.env
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env
+
+# Static and media files
+staticfiles/
+media/
+
+# Logs
+*.log

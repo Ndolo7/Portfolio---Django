@@ -1,0 +1,50 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %} 
+<div class="row my-5">
+    <div class="col-4 d-flex justify-content-center align-items-center">
+        <div class="circular-me">
+             <img src="{% static 'images/imani.jpg' %}" alt="Image" class="about-image">
+        </div>
+    </div>
+
+    <div class="col-7" text-left text-light >
+
+        <h2>Hello !</h2>
+        <p class="fs-5">
+            I bring a diverse background encompassing roles such as a Full Stack
+            Python developer, curriculum associate, mathematics teacher, and tech 
+            enthusiast. Alongside, I possess knowledge in the networking sector.
+        </p>
+        <p class="fs-5">
+            As a Full stack python trainer, I am dedicated to helping others learn
+            Python and DRF while continuously improving my own programming skills. 
+            I have a strong foundation in Python and a deep understanding of its 
+            concepts, syntax, and best practices.
+        </p>
+    </div>
+</div>
+
+<div class="row my-2">
+    <h2 class="text-center" style="color:rgb(108, 216, 230); padding-bottom: 20px;">My Tech Stack</h2>
+
+    <div class="d-flex justify-content-around align-items-center">
+        <img src="{% static 'images/html.png' %}" alt="html" width="60" height="60" class="img-fluid">
+
+        <img src="{% static 'images/css.jpg' %}" alt="css" width="60" height="60" class="img-fluid">
+
+        <img src="{% static 'images/javascript.png' %}" alt="javascript" width="60" height="60" class="img-fluid">
+
+        <img src="{% static 'images/python.jpeg' %}" alt="python" width="60" height="60" class="img-fluid">
+
+        <img src="{% static 'images/react.png' %}" alt="react" width="60" height="60" class="img-fluid">
+
+        <img src="{% static 'images/django.png' %}" alt="django" width="60" height="60" class="img-fluid">
+
+        <img src="{% static 'images/flask.jpg' %}" alt="flask" width="60" height="60" class="img-fluid">
+    </div>    
+
+</div>
+
+{% endblock content1 %}
