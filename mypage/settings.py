@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['127.0.0.1',
                  'ndolo7.github.io',
                  'node293a.containers.back4app.com',
                  'node292a.containers.back4app.com',
+                 'node294a.containers.back4app.com'
                  
                 ]
 
