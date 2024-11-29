@@ -19,9 +19,5 @@ env/
 .venv/
 .env
 
-# Static and media files
-staticfiles/
-media/
-
 # Logs
 *.log
