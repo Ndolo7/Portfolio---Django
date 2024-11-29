@@ -30,7 +30,8 @@ ALLOWED_HOSTS = ['127.0.0.1',
                  '.vercel.app', 
                  'imaniportfolio-lpbmow4i.b4a.run', 
                  'ndolo7.github.io',
-                 'node293a.containers.back4app.com'
+                 'node293a.containers.back4app.com',
+                 'node292a.containers.back4app.com'
                 ]
 
 
