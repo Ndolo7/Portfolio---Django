@@ -4,24 +4,21 @@
       {
         "src": "mypage/wsgi.py",
         "use": "@vercel/python",
-        "config": {
-          "maxLambdaSize": "15mb",
-          "runtime": "python3.9"
-        }
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
       },
       {
         "src": "build_files.sh",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "staticfiles"
-        }
+        "use": "@vercel/static"
       }
     ],
     "routes": [
       {
+        "src": "/staticfiles/(.*)",
+        "dest": "/staticfiles/$1"
+      },
+      {
         "src": "/(.*)",
         "dest": "mypage/wsgi.py"
       }
-    ],
-    "outputDirectory": "staticfiles"
-}
+    ]
+  }
