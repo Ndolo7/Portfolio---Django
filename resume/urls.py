@@ -11,3 +11,5 @@ urlpatterns = [
     path('contact',views.contact, name='contact'),
     path('resume',views.resume, name='resume')
 ]
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
