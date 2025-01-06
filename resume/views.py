@@ -13,31 +13,37 @@ def projects(request):
     projects_show=[
         { "title":"Portfolio Website",
             'path':"images/portfolio.jpg",
+            'url':"https://github.com/Ndolo7/Portfolio---Django",
         },
 
         {
             "title":"project2",
             'path':"images/project2.jpg",
+            'url':"https://github.com/Ndolo7/Portfolio---Django",
         },
 
         {
             "title":"project3",
             'path':"images/project3.jpg",
+            'url':"https://github.com/Ndolo7/Portfolio---Django",
         },
 
         {
             "title":"project4",
             'path':"images/project4.jpg",
+            'url':"https://github.com/Ndolo7/Portfolio---Django",
         },
 
         {
             "title":"project5",
             'path':"images/project5.jpg",
+            'url':"https://github.com/Ndolo7/Portfolio---Django",
         },
 
         {
             "title":"project6",
             'path':"images/project6.jpg",
+            'url':"https://github.com/Ndolo7/Portfolio---Django",
         },
     ]
     return render(request,"projects.html",{"projects_show": projects_show})
