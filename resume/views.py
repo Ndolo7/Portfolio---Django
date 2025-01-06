@@ -11,8 +11,8 @@ def about(request):
 
 def projects(request):
     projects_show=[
-        { "title":"project1",
-            'path':"images/project1.jpg",
+        { "title":"Portfolio Website",
+            'path':"images/portfolio.jpg",
         },
 
         {

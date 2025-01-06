@@ -39,7 +39,7 @@ color: rgb(108, 216, 230);
     padding-left: 40px;
 }
 .about-image{
-    width: 200px;
+    max-width: 100%;
     height: auto;
     display: block;
 }
