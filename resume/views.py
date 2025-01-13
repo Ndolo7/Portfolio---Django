@@ -13,13 +13,13 @@ def projects(request):
     projects_show=[
         { "title":"Portfolio Website",
             'path':"images/portfolio.jpg",
-            'url':"https://github.com/Ndolo7/Portfolio---Django",
+            'url':"https://imaniportfolio-lpbmow4i.b4a.run/",
         },
 
         {
             "title":"Resume Creator",
             'path':"images/Resumegen.jpg",
-            'url':"https://ndolo7.github.io/Dynamic-Resume-Builder/",
+            'url':"https://freeonlineresumegenerator.vercel.app/",
         },
 
         {
