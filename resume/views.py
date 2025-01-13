@@ -17,9 +17,9 @@ def projects(request):
         },
 
         {
-            "title":"project2",
-            'path':"images/project2.jpg",
-            'url':"https://github.com/Ndolo7/Portfolio---Django",
+            "title":"Resume Creator",
+            'path':"images/Resumegen.jpg",
+            'url':"https://ndolo7.github.io/Dynamic-Resume-Builder/",
         },
 
         {

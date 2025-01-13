@@ -86,28 +86,45 @@ color: rgb(108, 216, 230);
     color: #ffffff;
     border-radius: 40px;
     animation: animate 3s linear infinite;
+    -webkit-animation: animate 3s linear infinite;
     text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200 #0072ff;
 }
 #twitter1{
     animation-delay: 0.3s;
+    animation-delay: 0.3s;
 }
 #facebook1{
+    animation-delay: 0.4s;
     animation-delay: 0.4s;
 }
 #linkedin1{
     animation-delay: 0.2s;
+    animation-delay: 0.2s;
 }
 #whatsapp1{
+    animation-delay: 0.4s;
     animation-delay: 0.4s;
 }
 #mail1{
     animation-delay: 1.0s;
+    animation-delay: 1.0s;
 }
 #instagram1{
+    animation-delay: 0.8s;
     animation-delay: 0.8s;
 }
 #heading{
     animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+@-webkit-keyframes animate {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
 }
 
 @keyframes animate {
