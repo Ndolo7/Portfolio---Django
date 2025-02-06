@@ -23,21 +23,21 @@ def projects(request):
         },
 
         {
-            "title":"project3",
-            'path':"images/project3.jpg",
-            'url':"https://github.com/Ndolo7/Portfolio---Django",
+            "title":"Amazon E-Commerce Clone",
+            'path':"images/amazon.jpg",
+            'url':"https://ndolo7.github.io/Amazon-project/",
         },
 
         {
-            "title":"project4",
-            'path':"images/project4.jpg",
-            'url':"https://github.com/Ndolo7/Portfolio---Django",
+            "title":"USSD App Dashboard",
+            'path':"images/dashboard.jpg",
+            'url':"https://github.com/Ndolo7/testing-Ussd111",
         },
 
         {
-            "title":"project5",
-            'path':"images/project5.jpg",
-            'url':"https://github.com/Ndolo7/Portfolio---Django",
+            "title":"Ubuntu Fund Web App (Django Backend)",
+            'path':"images/ubuntu.jpg",
+            'url':"https://github.com/Ndolo7/ubuntufinal",
         },
 
         {
