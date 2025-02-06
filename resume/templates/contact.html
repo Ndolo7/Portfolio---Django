@@ -2,54 +2,62 @@
 {% load static %}
 {% block content1 %} 
 
-<div class="row my-2">
-    <div class="col-4 text-center my-5 text-light">
+<div class="row my-2 contact-container">
+
+    {% if messages %}
+    <div class="messages">
+        {% for message in messages %}
+        <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">
+            {{ message }}
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    <div class="col-4 text-center my-5 text-light contact-info">
         <h1 class="mt-5">Stay Connected</h1>
         <h3 class="mt-5">imanindolo77@gmail.com</h3>
 
-            <div class="col-12 d-flex justify-content-center align-items-center mt-5">
-    <a class="icons" target="_blank" id="linkedin1" href="https://www.linkedin.com/in/imani-ndolo-61ba26344"><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x" style="color: rgb(225, 94, 225);"></i><i class="fa fa-linkedin fa-stack-1x"></i></span></a>
+        <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+          <a class="icons" target="_blank" id="linkedin1" href="https://www.linkedin.com/in/imani-ndolo-61ba26344"><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x" style="color: rgb(225, 94, 225);"></i><i class="fa fa-linkedin fa-stack-1x"></i></span></a>
 
-    <a class="icons" style="color: rgb(98, 207, 221);" target="_blank" id="x1" href="https://x.com/ImaniNdolo"><img src="{% static 'images/x.jpeg' %}" alt="x" width="40" height="40"></a>
+          <a class="icons" style="color: rgb(98, 207, 221);" target="_blank" id="x1" href="https://x.com/ImaniNdolo"><img src="{% static 'images/x.png' %}" alt="x" width="40" height="40"></a>
 
-    <a class="icons" target="_blank" id="facebook1" href="https://www.facebook.com/share/15nTMvdT7a/"><img src="{% static 'images/facebook.jpg' %}" alt="facebook" width="40" height="40"></a>
-    <a class="icons" target=" _blank" id="instagram1" href="https://www.instagram.com/imani_ndolo/?igsh=cXJxZmFnMHFnZmk1"><img src="{% static 'images/instagram.jpg' %}" alt="instagram" width="40" height="40"></a>
+          <a class="icons" target="_blank" id="facebook1" href="https://www.facebook.com/share/15nTMvdT7a/"><img src="{% static 'images/facebook.jpg' %}" alt="facebook" width="40" height="40"></a>
+          <a class="icons" target=" _blank" id="instagram1" href="https://www.instagram.com/imani_ndolo/?igsh=cXJxZmFnMHFnZmk1"><img src="{% static 'images/instagram.jpg' %}" alt="instagram" width="40" height="40"></a>
 
-    <a class="icons" target="_blank" id="whatsapp1" href="https://wa.me/message/757XFBSEXX4SA1"><span class="fa-stack fa-lg"><i class="fa fa-whatsapp fa-stack-2x" style="color: rgb(68, 211, 85);"></i></span></a>
-    <a class="icons" target="_blank" id="mail1" href="https://github.com/Ndolo7">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-github fa-stack-2x" style="color: rgb(205, 212, 130);"></i>
-      </span>
-    </a>
-  </div> 
-
-            
-            
+          <a class="icons" target="_blank" id="whatsapp1" href="https://wa.me/message/757XFBSEXX4SA1"><span class="fa-stack fa-lg"><i class="fa fa-whatsapp fa-stack-2x" style="color: rgb(68, 211, 85);"></i></span></a>
+          <a class="icons" target="_blank" id="mail1" href="https://github.com/Ndolo7">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-github fa-stack-2x" style="color: rgb(205, 212, 130);"></i>
+            </span>
+          </a>
+        </div>
 
     
     </div>
 
     <div class="col-5 offset-1 mt-3">
         <div class="container form-container">
-            <form>
-            <div class="form-group m-3">
+            <form method="post" action="{% url 'contact' %}">
+            {% csrf_token %}
+              <div class="form-group m-3">
               <label for="exampleInputEmail1">Name:</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Jone Doe">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Jone Doe" required>
             </div>
             <div class="form-group m-3">
                 <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="jonedoe@example.com">
-              </div>
+                <input type="email" class="form-control" id="email" name="email" placeholder="jonedoe@example.com" required>
+            </div>
 
-              <div class="form-group m-3">
-                <label for="phone">Phone no.:</label>
-                <input type="tel" class="form-control" id="phone" >
-              </div>
+            <div class="form-group m-3">
+              <label for="phone">Phone no.:</label>
+              <input type="tel" class="form-control" id="phone" name="phone">
+            </div>
 
-              <div class="form-group m-3"></div>
-                <label for="message">Message:</label>
-                <textarea type="tel" class="form-control" id="message" rows="3" placeholder="Enter your text message here"></textarea>
-              </div>
+            <div class="form-group m-3"></div>
+              <label for="message">Message:</label>
+              <textarea type="tel" class="form-control" id="message" name="message" rows="3" placeholder="Enter your text message here" required></textarea>
+            </div>
             
             <button type="submit" class="btn btn-primary m-3">Submit</button>
             </form>
